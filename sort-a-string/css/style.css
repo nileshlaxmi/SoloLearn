@@ -1,5 +1,5 @@
 body{
-    background: #25A9FC;
+    background: #000;
 }
 div{
     position: relative;
@@ -11,6 +11,7 @@ div{
     width: 400px;
     padding: 20px 10px 0 20px;
     background-color: #e6e6ff;
+    border-radius: 10px;
 }
 
 #ipText{
