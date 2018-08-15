@@ -1,4 +1,7 @@
-const romanConverter = (num) => {
+const romanConverter = () => {
+    var numStr = $("#ipText").val();
+    var num = parseInt(numStr);
+
     let decimalArray = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
     let romanArray = ["M", "CM", "DCCC", "DCC", "DC", "D", "CD", "CCC", "CC", "C", "XC", "LXXX", "LXX", "LX", "L", "XL", "XXX", "XX", "X", "IX", "VIII", "VII", "VI", "V", "IV", "III", "II", "I"];
     let a, b, c, d, indexA, indexB, indexC;
@@ -6,7 +9,7 @@ const romanConverter = (num) => {
     let ar = num.toString().split("");
 
     let len = ar.length;
-    let index = decimalArray.indexOf(num)
+    let index = decimalArray.indexOf(num);
 
     if(index !== -1){
         output = romanArray[index];
@@ -84,20 +87,25 @@ const romanConverter = (num) => {
         }
     }    
     console.log(output);
+    $("#opText").text(output);
 }
 
+function clearFields(){
+    document.getElementById('ipText').value = "";
+    document.getElementById('opText').innerHTML = "";
+}
 
-romanConverter(8999);
-romanConverter(891);
-romanConverter(1004);
-romanConverter(1054);
-romanConverter(1504);
-romanConverter(1534);
-romanConverter(2034);
-romanConverter(3999);
-romanConverter(3);
-romanConverter(30);
-romanConverter(90);
-romanConverter(300);
-romanConverter(310);
-romanConverter(309);
+// romanConverter(8999);
+// romanConverter(891);
+// romanConverter(1004);
+// romanConverter(1054);
+// romanConverter(1504);
+// romanConverter(1534);
+// romanConverter(2034);
+// romanConverter(3999);
+// romanConverter(3);
+// romanConverter(30);
+// romanConverter(90);
+// romanConverter(300);
+// romanConverter(310);
+// romanConverter(309);

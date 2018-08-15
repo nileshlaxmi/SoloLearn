@@ -1,0 +1,33 @@
+body{
+    background: #000;
+}
+
+div{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    padding: 20px 10px 0 20px;
+    background-color: #e6e6ff;
+    border-radius: 10px;
+}
+
+#ipText{
+    font-size: 20px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}  
+
+#opText{
+    text-align: center;
+    font-size: 25px;
+}
