@@ -1,50 +1,59 @@
 const scrabble = (str) => {
     let ar = str.split(" ");
     console.log(ar);
-    let point = [], sum = 0, newAr = [];
+    let points = [], sum = 0, newAr = [];
 
-    let onepointer = ["a", "e", "i", "o", "u", "n", "r", "t", "l", "s"];
-    let twopointer = ["d", "g"];
-    let threepointer = ["b", "c", "m", "p"];
-    let fourpointer = ["f", "h", "v", "w", "y"];
-    let fivepointer = ["k"];
-    let eightpointer = ["j", "x"];
-    let tenpointer = ["q", "z"];
+    let onepointer = ["a", "e", "i", "o", "u", "n", "r", "t", "l", "s", "A", "E", "I", "O", "U", "N", "R", "T", "L", "S"];
+    let twopointer = ["d", "g", "D", "G"];
+    let threepointer = ["b", "c", "m", "p", "B", "C", "M", "P"];
+    let fourpointer = ["f", "h", "v", "w", "y", "F", "H", "V", "W", "Y"];
+    let fivepointer = ["k", "K"];
+    let eightpointer = ["j", "x", "J", "X"];
+    let tenpointer = ["q", "z", "Q", "Z"];
 
-    for(let i=0; i<ar.length; i++){
-        sum = 0;
+    for(let i=0; i<ar.length; i++){        
         for(let j =0; j< ar[i].length; j++){            
-            newAr = ar[i].split("");  
-
-            if(onepointer.indexOf(newAr[j])){
-                sum = sum + 1;
-            }
-            else if(twopointer.indexOf(newAr[j])){
-                sum = sum + 2;
-            } 
-            else if(threepointer.indexOf(newAr[j])){
-                sum = sum + 3;
-            }
-            else if(fourpointer.indexOf(newAr[j])){
-                sum = sum + 4;
-            }
-            else if(fivepointer.indexOf(newAr[j])){
-                sum = sum + 5;
-            }
-            else if(eightpointer.indexOf(newAr[j])){
-                sum = sum + 8;
-            }
-            else if(tenpointer.indexOf(newAr[j])){
-                sum = sum + 10;
-            }
-            else{
-                sum = sum + 0;
-            }      
-        }
-        console.log(newAr);
-        console.log(sum);
+            newAr = ar[i].split(""); 
+            sum = 0;
+            for(let k =0; k<newAr.length; k++){
+                if(onepointer.indexOf(newAr[k]) !== -1){
+                    sum = sum + 1;
+                }
+                else if(twopointer.indexOf(newAr[k]) !== -1){
+                    sum = sum + 2;
+                } 
+                else if(threepointer.indexOf(newAr[k]) !== -1){
+                    sum = sum + 3;
+                }
+                else if(fourpointer.indexOf(newAr[k]) !== -1){
+                    sum = sum + 4;
+                }
+                else if(fivepointer.indexOf(newAr[k]) !== -1){
+                    sum = sum + 5;
+                }
+                else if(eightpointer.indexOf(newAr[k]) !== -1){
+                    sum = sum + 8;
+                }
+                else if(tenpointer.indexOf(newAr[k]) !== -1){
+                    sum = sum + 10;
+                }
+                else{
+                    sum = 0;
+                }
+            }            
+        } 
+        points.push(sum);               
     }
 
+    let sortArray = points.slice().sort(function(a, b){
+        return b-a;
+    });
+
+    console.log(sortArray);
+    console.log(points);
+    let index = points.indexOf(sortArray[0]);
+    console.log(index);
+    console.log(ar[index]);
 }
 
 scrabble("This is a cool challenge");
