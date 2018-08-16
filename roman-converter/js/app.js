@@ -30,26 +30,31 @@ const romanConverter = () => {
                     str = str + "M";
                 }
                 
-                if(a > 0){
-                    indexA = decimalArray.indexOf(a);
-                }
-        
-                if(b > 0){
-                    indexB = decimalArray.indexOf(b);
-                }
-                
                 indexA = decimalArray.indexOf(a);
                 indexB = decimalArray.indexOf(b);
                 indexC = decimalArray.indexOf(c);
         
-                if(indexA === -1 && indexB === -1){
+                if(indexA === -1 && indexB === -1 && indexC !== -1){
                     output = str+romanArray[indexC];
                 } 
-                else if(indexA === -1 && indexB != -1){
+                else if(indexA === -1 && indexB != -1 && indexC !== -1){
                     output = str+romanArray[indexB]+romanArray[indexC];
                 } 
-                else if(indexB === -1 && indexA !== -1){
+                else if(indexB === -1 && indexA !== -1 && indexC !== -1){
                     output = str+romanArray[indexA]+romanArray[indexC];
+                }
+                else if(indexA !== -1 && indexB === -1 && indexC === -1){                    
+                    index = decimalArray.indexOf(a);
+                    output = str+romanArray[index];
+                }
+                else if(indexA === -1 && indexB !== -1 && indexC === -1){
+                    index = decimalArray.indexOf(b);
+                    output = str+romanArray[index];
+                }
+                else if(indexA !== -1 && indexB !== -1 && indexC === -1){
+                    indexA = decimalArray.indexOf(a);
+                    indexB = decimalArray.indexOf(b);
+                    output = str+romanArray[indexA]+romanArray[indexB];
                 }
                 else if (indexB !== -1 && indexA !== -1){
                     output = str+romanArray[indexA]+romanArray[indexB]+romanArray[indexC];
