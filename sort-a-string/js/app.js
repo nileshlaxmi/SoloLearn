@@ -10,7 +10,7 @@ sortString("$tar3");
 */
 
 
-function removeSpace(){
+function sortString(){
     var inputData = $("#ipText").val();
     var output = inputData.split("").sort().join("");
     $("#opText").text(output);
