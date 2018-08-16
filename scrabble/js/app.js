@@ -1,7 +1,6 @@
 const scrabble = () => {
     var str = $("#ipText").val();
     let ar = str.split(" ");
-    console.log(ar);
     let points = [], sum = 0, newAr = [];
 
     let onepointer = ["a", "e", "i", "o", "u", "n", "r", "t", "l", "s", "A", "E", "I", "O", "U", "N", "R", "T", "L", "S"];
@@ -50,15 +49,9 @@ const scrabble = () => {
         return b-a;
     });
 
-    // console.log(sortArray);
-    // console.log(points);
     let index = points.indexOf(sortArray[0]);
-    // console.log(index);
-    // console.log(ar[index]);
     $("#opText").text(ar[index]);
 }
-
-// scrabble("This is a cool challenge");
 
 function clearFields(){
     document.getElementById('ipText').value = "";
