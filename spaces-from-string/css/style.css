@@ -1,21 +1,28 @@
 body{
   background: #000;
 }
+
 div{
   position: relative;
   margin: auto;
   display: block;
-  margin-top: 8%;
+  margin-top: 10%;
   border: 2px solid black;
   height: 200px;
-  width: 400px;
+  width: 40%;
   padding: 20px 10px 0 20px;
   background-color: #e6e6ff;
   border-radius: 10px;
 }
 
+h2{
+  text-align: center;
+}
+
 #ipText{
   font-size: 20px;
+  margin-left: 10%;
+  width: 50%;
 }
 
 button{
