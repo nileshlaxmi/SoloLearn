@@ -15,3 +15,12 @@ In this challenge, user can enter decimal number which will convert to its respe
 
 ## scrabble:
 Logic of Scrabble game is implemented.
+
+## design-pattern-one:
+Triangle (right angle triangle) Design implemented.
+
+## ugly-number:
+Ugly Number Logic implemented.
+
+## deficient-number:
+Deficient Number Logic implemented.
