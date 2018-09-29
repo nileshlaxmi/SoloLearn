@@ -8,19 +8,16 @@ const clickFunction = () => {
     for(i=1; i<=num; i++){
         if(num%i === 0){
             c1++;
-            console.log("Number factors:", i);
         }
     }
 
     for(i=1; i<=revNum; i++){
         if(revNum%i === 0){
             c2++;
-            console.log("Reverse Number factors:", i);
         }
     }
 
     if(c1 === 2 && c2 === 2){
-        console.log("Emrip Number");
         $("#opText").text("Emrip Number");
     }
     else{
