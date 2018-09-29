@@ -1,18 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     background: #fff;
 }
 
-div{
-    position: relative;
+.wrapper{
+    display: grid;
     margin: auto;
-    display: block;
-    margin-top: 10%;
     border: 2px solid black;
-    height: 200px;
-    width: 40%;
-    padding: 20px 10px 0 20px;
+    height: 100%;
+    width: 80%;
     background-color: #e6e6ff;
     border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.deficient-div{
+    height: 30%;
+    width: 40%;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#easy{
+    
+}
+
+#medium{
+    
+}
+
+#hard{
+    
 }
 
 h2{
