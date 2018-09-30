@@ -23,7 +23,14 @@ Triangle (right angle triangle) Design implemented.
 Ugly Number Logic implemented.
 
 ## Deficient-number:
-Deficient Number Logic implemented.
+A number is considered deficient if the sum of its factors is less than twice that number.
+
+```
+For Example:
+10 is a deficient number.
+Factors of 10 are 1, 2, 5, 10
+Sum is 1 + 2 + 5 + 10 = 18 < 2 * 10
+```
 
 ## Caesar Cipher:
 Caesar cipher is one of the earliest known and simplest ciphers. It is a type of substitution cipher in which each letter in the plaintext is shifted to a certain number of places down the alphabet. For example, with a shift of 1, A would be replaced by B, B would become C, and so on. The method is named after Julius Caesar, who allegedly used it to communicate with his generals.
