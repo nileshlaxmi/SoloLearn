@@ -28,7 +28,6 @@ h2{
     font-size: 20px;
     margin-left: 10%;
     width: 50%;
-    padding-left: 5px;
 }
 
 button{
@@ -39,7 +38,6 @@ button{
     letter-spacing: 1px;
     background-color: #720000;
     color: #fff;
-    cursor: pointer;
 }  
 
 #opText{
