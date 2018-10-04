@@ -78,3 +78,33 @@ Input: 135
 Output: true
 135 is a Disarium number because it equals to 1^1 + 3^2 + 5^3 (each digit powered to the position in the number).
 ```
+
+## Trimorphic Number
+A trimorphic number is a number whose cube ends in the number itself. 
+
+```
+For example:
+Input: 4
+Output: true (4^3 is 64, which ends in 4)
+
+Input: 24
+Output: true (24^3 = 13824)
+
+Input: 249
+Output: true (249^3 = 15438249)
+```
+
+## Howling-prime
+A howling prime is a prime number if the sum of its digits is also a prime number.
+
+```
+For Example:
+Input:113
+Output: true (113 is a prime number, 1+1+3=5 is also a prime number)
+
+Input: 89
+Output: true (89 is a prime number, 8+9=17 is also a prime number)
+
+Input: 19 
+Output: false (19 is a prime number, but 1+9=10 is not a prime number)
+```
