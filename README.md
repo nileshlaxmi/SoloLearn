@@ -108,3 +108,16 @@ Output: true (89 is a prime number, 8+9=17 is also a prime number)
 Input: 19 
 Output: false (19 is a prime number, but 1+9=10 is not a prime number)
 ```
+
+## Spy Number
+A number is called a Spy number, if the sum and product of its digits are equal.
+For example, 123 is a Spy number, as the sum of its digits is 6 (1+2+3) which is equal to the product of its digits: 6 (1x2x3).
+
+```
+For example:
+Input: 1412
+Output: true
+
+Input: 247
+Output: false
+```
