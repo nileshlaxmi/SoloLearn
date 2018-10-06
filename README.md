@@ -137,3 +137,14 @@ For instance, a 3 digit number will be considered an Armstrong number if the sum
 ```
 For example, 153 is an Armstrong number, as 1**3 + 5**3 + 3**3 = 153
 ```
+
+## Abundant Number 
+If the sum of factors of a number is greater than twice that number, it is considered to be abundant.
+
+```
+For example:
+12 is an abundant number.
+Factors of 12 are 1, 2, 3, 4, 6, 12
+Sum is 1 + 2 + 3 + 4 + 6 + 12 = 28 > 2 * 12
+```
+
