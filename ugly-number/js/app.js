@@ -31,14 +31,17 @@ const clickFunction = () => {
             }
         }
         else if(br.length == 2){
-            for(i=0; i<br.length; i++){
-                if(br[i] !== 2 || br[i] !== 3 || br[i] !== 5){
-                    document.getElementById('opText').innerHTML = "Not an Ugly Number";
-                }
-                else{
-                    document.getElementById('opText').innerHTML = "Ugly Number";
-                }
+            let x = br.indexOf(2);
+            let y = br.indexOf(3);
+            let z = br.indexOf(5);
+
+            if(x == -1 || y == -1 || z == -1){
+                document.getElementById('opText').innerHTML = "Not an Ugly Number";
             }
+            else{
+                document.getElementById('opText').innerHTML = "Ugly Number";
+            }
+
         }
         else if(br.length == 3){
             for(i=0; i<br.length; i++){
