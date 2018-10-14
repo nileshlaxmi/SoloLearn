@@ -7,6 +7,14 @@
 ## Spaces-from-String:
 In this challenge, user can remove space between a sentence.
 
+Given a string as input, output it without spaces.
+
+```
+For example:
+string = "ab c  d e fgh i  j kl mn  opqr  stuvwxyz"
+result = "abcdefghijklmnopqrstuvwxyz"
+```
+
 ## Sort-a-String:
 Given a string as input, output its characters alphabetically sorted from A to Z.
 ```
@@ -27,6 +35,17 @@ Whitespaces should be ignored.
 
 ## Roman-Number-Converter:
 In this challenge, user can enter decimal number which will convert to its respective Roman number.
+
+```
+Romans Numerals are based on the following symbols:
+I = 1
+V = 5
+X = 10
+L = 50
+C = 100
+D = 500
+M = 1000
+```
 
 ## Scrabble:
 
@@ -57,6 +76,44 @@ output : Challenge
 
 ## design-pattern-one:
 Triangle (right angle triangle) Design implemented.
+
+```
+Pattern #1
+1
+22
+333
+4444
+55555
+and so on.
+
+Pattern #2
+1
+12
+123
+1234
+12345
+and so on.
+
+Pattern #3
+1
+13
+135
+1357
+13579
+and so on.
+
+Pattern #4
+0
+01
+010
+0101
+01010
+and so on.
+```
+****
+### Bonus: 
+Reverse the design.
+****
 
 ## Ugly-number:
 A number is considered to be ugly if its only prime factors are 2, 3 or 5. 
