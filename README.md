@@ -7,17 +7,113 @@
 ## Spaces-from-String:
 In this challenge, user can remove space between a sentence.
 
+Given a string as input, output it without spaces.
+
+```
+For example:
+string = "ab c  d e fgh i  j kl mn  opqr  stuvwxyz"
+result = "abcdefghijklmnopqrstuvwxyz"
+```
+
 ## Sort-a-String:
-In this challenge, user can sort a string alphabetically and it also cater alphanumeric characters.
+Given a string as input, output its characters alphabetically sorted from A to Z.
+```
+For Example:
+Input: challenge
+Output: aceeghlln
+
+Number should go first:
+Input: happy42
+Output: 24ahppy
+
+Special characters, such as symbols, go before numbers and letters:
+Input: $tar3
+Output: $3art
+```
+
+Whitespaces should be ignored.
 
 ## Roman-Number-Converter:
 In this challenge, user can enter decimal number which will convert to its respective Roman number.
 
+```
+Romans Numerals are based on the following symbols:
+I = 1
+V = 5
+X = 10
+L = 50
+C = 100
+D = 500
+M = 1000
+```
+
 ## Scrabble:
-Logic of Scrabble game is implemented.
+
+Give a variable number of words, create a program to output the word with the maximum score, based on the following scoring system:
+The score of a word is calculated based on its character values, according to this table:
+
+e, a, i, o, n, r, t, l, s, u are equal 1 point
+
+d, g	2 points
+
+b, c, m, p	3 points
+
+f, h, v, w, y 4 points
+
+k 5 points
+
+j, x 8 points
+
+q, z 10 points
+
+The max length of a word is 10 letters.
+
+```
+For example: 
+input { "This",  "is", "a", "cool" , "Challenge" }
+output : Challenge
+```
 
 ## design-pattern-one:
 Triangle (right angle triangle) Design implemented.
+
+```
+Pattern #1
+1
+22
+333
+4444
+55555
+and so on.
+
+Pattern #2
+1
+12
+123
+1234
+12345
+and so on.
+
+Pattern #3
+1
+13
+135
+1357
+13579
+and so on.
+
+Pattern #4
+0
+01
+010
+0101
+01010
+and so on.
+```
+****
+### Bonus: 
+Reverse the design.
+****
 
 ## Ugly-number:
 A number is considered to be ugly if its only prime factors are 2, 3 or 5. 
@@ -127,4 +223,76 @@ Output: true
 
 Input: 247
 Output: false
+```
+
+## Armstrong Number
+An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.
+
+For instance, a 3 digit number will be considered an Armstrong number if the sum of the cubes of its digits is equal to the number itself. 
+
+```
+For example, 153 is an Armstrong number, as 1**3 + 5**3 + 3**3 = 153
+```
+
+## Abundant Number 
+If the sum of factors of a number is greater than twice that number, it is considered to be abundant.
+
+```
+For example:
+12 is an abundant number.
+Factors of 12 are 1, 2, 3, 4, 6, 12
+Sum is 1 + 2 + 3 + 4 + 6 + 12 = 28 > 2 * 12
+```
+## Lab Number
+A lab number is a number such that the square of any of its prime divisors is still one of its divisors.
+
+```
+For example:
+Input: 8
+Output: true (2 is a prime divisor of 8, and 2x2=4 is also a divisor of 8)
+
+Input: 50
+Output: true (5 is a prime divisor of 50, and 5x5=25 is also a divisor of 50)
+```
+
+## remove-special-characters
+Remove all the special characters from a given string
+
+Write a program to remove all the special characters from a given string and print the result.
+
+Some examples of special characters: "@#₹_ƒ&-+`()/*{}€¥$¢~"
+
+```
+For example:
+
+Input:
+1. "H@e#&l+l/*o"
+2. "$¥W¢πO}R|%L&@D"
+
+Output:
+1. Hello
+2. WORLD
+```
+
+## password-validator
+Password validator is a program that validates passwords to match specific rules. For example, the minimum length of the password must be eight characters long and it should have at least one uppercase letter in it. 
+
+A valid password is the one that conforms to the following rules:
+
+    * Minimum length is 5;
+    * Maximum length is 10;
+    * Should contain at least one number;
+    * Should contain at least one special character (such as &, +, @, $, #, %, etc.);
+    * Should not contain spaces.
+
+```
+Examples:
+Input: "Sololearn"
+Output: false
+
+Input: "John Doe"
+Output: false
+
+Input: "$ololearn7"
+Output: true
 ```

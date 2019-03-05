@@ -63,6 +63,7 @@ const computeFunction = () => {
             else if(y == -1 && z == -1){
                 document.getElementById('opText').innerHTML = "Not an Ugly Number";
             }
+
         }
         else if(br.length === 3){
             let ar = [2, 3, 5];
