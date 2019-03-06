@@ -296,3 +296,22 @@ Output: false
 Input: "$ololearn7"
 Output: true
 ```
+
+## happy-number
+If the repeated sum of squares of the digits of a number is equal to 1, it is considered to be happy.
+
+```
+For Example:
+
+23 is a happy number, as:
+
+2 ^ 2 + 3 ^ 2 = 13
+1 ^ 2 + 3 ^ 2 = 10
+1 ^ 2 + 0 ^ 2 = 1
+
+
+Sequence of happy numbers: 1, 7, 10, 13, 19, 23, ...
+``` 
+
+If the sum of squares of digits reaches 4, 1 can never be reached thus making the number unhappy or sad.
+
